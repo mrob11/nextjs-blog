@@ -1,30 +1,45 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/zeit/next.js/tree/canary/packages/create-next-app).
+# Next.js + Contentful + Vercel static generated blog application
 
-## Getting Started
+This is the code from the tutorial series on building a static generated blog
+with Next.js, Contentful, and Vercel, available on my blog at
+[https://heymike.dev](https://heymike.dev).
 
-First, run the development server:
+The code for each part is available in branches that will be updated as new
+parts to the series are released. The master branch will always represent the
+current state of the tutorial.
 
-```bash
-npm run dev
-# or
-yarn dev
+## Articles
+
+- [Part One](https://heymike.dev/post/build-a-static-blog-with-next-js-and-contentful-part-one-contentful)
+- [Part Two](https://heymike.dev/post/build-a-static-blog-with-next-js-and-contentful-part-two-next-js)
+
+## Code Branches
+
+- [01-bootstrap-project](https://github.com/mike360/nextjs-blog/tree/01-bootstrap-project)
+- [02-fetching-posts-from-contentful](https://github.com/mike360/nextjs-blog/tree/02-fetching-posts-from-contentful)
+
+## Prerequisites
+
+- [Node.js v12](https://nodejs.org)
+- [Vercel CLI](https://vercel.com/download) for running `now dev` locally.
+- An account with [Contentful](https://contentful.com)
+
+## Setting up this application locally
+
+Clone the repository:
+
+```
+git clone https://github.com/mike360/nextjs-blog.git
+cd nextjs-blog
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a local environment variable file `.env`:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```
+CONTENTFUL_SPACE_ID=<your space ID here>
+CONTENTFUL_ACCESS_TOKEN=<your contentful access token here>
+```
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/zeit/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Refer to [Part One](https://heymike.dev/post/build-a-static-blog-with-next-js-and-contentful-part-one-contentful)
+for setting up Contentful.
