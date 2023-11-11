@@ -8,7 +8,7 @@
     "start": "next start"
   },
   "dependencies": {
-    "contentful": "^9.2.17",
+    "contentful": "^10.6.7",
     "next": "12.1.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
